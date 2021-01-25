@@ -1,7 +1,7 @@
 import sentences
 from enum import Enum
 
-Dzien = Enum('Dni_Tygod nia','poniedzialek wtorek sroda czwartek piatek sobota niedziela')
+Dzien = Enum('Dni_Tygodnia','poniedzialek wtorek sroda czwartek piatek sobota niedziela')
 
 while(1):
 
