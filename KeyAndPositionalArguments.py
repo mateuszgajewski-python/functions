@@ -13,17 +13,17 @@ def greet3(name, message):
 
 greet3(message = "Witojcie", name = "Arek",)
 
-def greet3(name, message):
-    print(message, name, sep="&&&" )
-
-greet3("Arek", "Witojcie")
-
 def greet4(name, message):
-    print(message, name, sep="\n" )
+    print(message, name, sep="&&&" )
 
 greet4("Arek", "Witojcie")
 
-def greet4(name, message, separator= " "):
+def greet5(name, message):
+    print(message, name, sep="\n" )
+
+greet5("Arek", "Witojcie")
+
+def greet6(name, message, separator= " "):
     print(message, name, sep=separator)
 
-greet4("Arek", "Witojcie", "\n")
+greet6("Arek", "Witojcie", "\n")
