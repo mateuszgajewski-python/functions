@@ -1,8 +1,14 @@
 import time
 
-def function_performance(func, *arg, how_many_times = 1):
+def function_performance(func, *arg, **arg2): ### *arg - ktore sa nie nazwane, **arg - ktore sa nazwane
     sum = 0
-    for i in range(0, how_many_times):
+    #print(arg[0]) #- mozna wejsc do pierwszego argumentu argumentu wielowarotsciowego za pomoca indexu
+    #print(arg[1]) #- i do drugiego
+    #w przypadku **arg
+    #print(arg2) #- slownik
+    #print(arg2.get("how_many_times"))  # - za pomoca nazwy odczytujemy wartosc 
+    
+    for i in range(0, arg2.get("how_many_times")):
         start = time.perf_counter()
         func(*arg)
         end = time.perf_counter()
@@ -11,8 +17,6 @@ def function_performance(func, *arg, how_many_times = 1):
 
 setContainer = {i for i in range(1000)}
 listContainer = [i for i in range(1000)]
-
-#funkcja, czy 30 znajduje sie w set i list
 
 
 def znajdzCzyNalezy(listLubzbior, arg):
